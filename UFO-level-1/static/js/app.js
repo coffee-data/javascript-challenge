@@ -28,7 +28,7 @@ form.on("submit", runEnter);
 // });
 
 function runEnter() {
-
+    
     // Prevent the page from refreshing
     d3.event.preventDefault();
 
@@ -48,6 +48,9 @@ function runEnter() {
     })
 
     console.log(filteredData);
+
+    // Reset the table
+    tbody.html("");
 
     filteredData.forEach(function(dataReport) {
         console.log(dataReport);
