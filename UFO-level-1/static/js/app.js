@@ -14,19 +14,6 @@ var tbody = d3.select("tbody");
 button.on("click", runEnter);
 form.on("submit", runEnter);
 
-// // Create the table and display
-// data.forEach(function(dataReport) {
-//     console.log(dataReport);
-//     var row = tbody.append("tr");
-    
-//     Object.entries(dataReport).forEach(function([key,value]) {
-//     console.log(key,value)
-
-//     var cell = tbody.append("td");
-//     cell.text(value);
-//     });
-// });
-
 function runEnter() {
     
     // Prevent the page from refreshing
